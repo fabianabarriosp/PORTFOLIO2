@@ -137,37 +137,73 @@ section {
 
 .modal-content {
     background: black;
-    color: #fff;
+    color: white;
     padding: 20px;
     border-radius: 8px;
     width: 80%;
     max-width: 800px;
-    text-align: left;
+    display: grid;
+    gap: 20px;
 }
 
-.modal h5 {
-    font-size: 15px; 
-    font-weight: bold; 
+/* Zigzag Layout */
+.modal-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    align-items: center;
+    padding:20px;
 }
 
-.modal p {
-    font-size: 13px;
+.modal-item:nth-child(odd) .text {
+    order: 1; /* Text first for odd rows */
 }
 
+.modal-item:nth-child(odd) .image {
+    order: 2;
+}
 
-.close {
-    font-size: 40px;
+.modal-item:nth-child(even) .text {
+    order: 2; /* Text second for even rows */
+}
+
+.modal-item:nth-child(even) .image {
+    order: 1;
+}
+
+/* Text Styling */
+.modal-item .text {
+    font-size: 14px;
+    line-height: 1.5;
+    width:96%;
+}
+
+.modal-item .text h5 {
+    font-size: 16px;
     font-weight: bold;
-    color: #fff;
-    position: absolute;
-    top: 210px;
-    right: 245px;
-    cursor: pointer;
-    transition: color 0.3s;
+    margin-bottom: 8px;
 }
 
-.close:hover {
-    color: red;
+.text-feedback {
+    border:2px dashed #fff;
+    padding:18px;
+}
+
+/* Image Styling */
+.modal-item .image img {
+    width: 260px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 50px;
+}
+
+.close{
+    position: sticky;
+    font-size: 40px;
+}
+
+.close:hover{
+    color:#f37489
 }
 
 
