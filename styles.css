@@ -214,6 +214,18 @@ section {
     color:#f37489
 }
 
+/*Birthday magazine video*/
+.video-container {
+    padding: 20px;
+    margin-left: 50px;
+}
+
+video {
+    width: 80%;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+}
 
 /* Learning Outcomes*/
 #learning-outcomes h1 {
