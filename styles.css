@@ -194,7 +194,18 @@ section {
 
 .text-feedback {
     border:2px dashed #fff;
-    padding:18px;
+    padding:28px;
+}
+
+.text-feedback2 {
+    border:2px dashed #fff;
+    padding:28px;
+    margin:40px
+}
+
+.spaced-br{
+    display:block;
+    margin-top: 65px;
 }
 
 /* Image Styling */
