@@ -208,6 +208,11 @@ section {
     margin-top: 65px;
 }
 
+.spaced-br2{
+    display:block;
+    margin-top: 25px;
+}
+
 /* Image Styling */
 .modal-item .image img {
     width: 260px;
