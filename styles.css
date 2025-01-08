@@ -230,6 +230,18 @@ section {
     color:#f37489
 }
 
+.specificimage{
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 180px;
+}
+
+.specifictext{
+    margin-left: 180px;
+}
+
+
 /*Birthday magazine video*/
 .video-container {
     padding: 20px;
